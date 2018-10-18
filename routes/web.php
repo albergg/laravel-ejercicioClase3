@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/movies', function () {
+    return view('movies');
+});
+Route::get('/genres', function () {
+    return view('genres');
+});
+Route::get('actors', 'ActorsController@index');
