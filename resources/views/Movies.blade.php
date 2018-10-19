@@ -14,7 +14,7 @@
         <ul>
         @foreach ($movies as $movie)
         <li><b>{{$movie->title}}</b></br> Rating: {{$movie->rating}}</li>
-        <a href="/movies/$oneMovie->$id" class="btn btn-primary">Ver mas informacion</a>
+        <a href="/movies/detail/{{$movie->id}}" class="btn btn-primary">Ver mas informacion</a>
         @endforeach;
     </ul>
 </body>
