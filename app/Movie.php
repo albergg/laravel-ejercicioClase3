@@ -7,6 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class Movie extends Model
 {
     public function getTitleAndRating() {
-        return $this->title . "" . $this->rating;
+        return $this->title . " " . $this->rating;
     }
+
+    // public function getTitleAndRating() {
+    //     return $this->title . "" . $this->rating;
+    // }
+
+
 }

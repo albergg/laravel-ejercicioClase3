@@ -6,9 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>estamos en actors view</h2>
-    <br>
-
-
+    <h2>Show</h2>
+    
 </body>
 </html>

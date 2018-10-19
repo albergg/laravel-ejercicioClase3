@@ -14,10 +14,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/movies', function () {
-    return view('movies');
-});
+Route::get('/movies', 'MoviesController@index');
+
 Route::get('/genres', function () {
     return view('genres');
 });
 Route::get('actors', 'ActorsController@index');
+
+
+Route::get('/movies/detail/{id}', 'MoviesController@show');
+
+Route::get('/actors/search', 'ActorsController@search');
+
+Route::get('/addmovies', function () {
+    return view('AddMovies');
+});

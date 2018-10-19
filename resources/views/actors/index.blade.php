@@ -11,6 +11,8 @@
     <ul>
         @foreach ($actors as $oneActor)
     <li>{{$oneActor->getFullName()}}</li>
+        <button type="button" class="btn btn-primary">ver mas</button>
         @endforeach;
+        
     </ul>
 </body>

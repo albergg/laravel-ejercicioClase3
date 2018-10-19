@@ -12,4 +12,8 @@ class ActorsController extends Controller
         
         return view ('actors.index')->with(compact ('actors'));
     }
+    public function search() {
+        
+       return view ('actors.Search') ;
+    }
 }
