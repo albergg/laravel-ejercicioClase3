@@ -8,5 +8,9 @@
 </head>
 <body>
     <h2>actors index</h2>
+    <ul>
+        @foreach ($actors as $oneActor)
+    <li>{{$oneActor->getFullName()}}</li>
+        @endforeach;
+    </ul>
 </body>
-</html>

@@ -9,7 +9,7 @@ class ActorsController extends Controller
 {
     public function index() {
         $actors = Actor::all();
-
+        
         return view ('actors.index')->with(compact ('actors'));
     }
 }
